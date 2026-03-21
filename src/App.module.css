@@ -49,5 +49,9 @@
 .main {
   max-width: 72rem;
   margin: 0 auto;
-  padding: 1.5rem 1.25rem 2.5rem;
+  padding: 2rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: calc(100vh - 8rem);
 }
