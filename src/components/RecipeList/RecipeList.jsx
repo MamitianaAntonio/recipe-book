@@ -4,7 +4,7 @@ import styles from './RecipeList.module.css'
 export default function RecipeList({ recipes }) {
   return (
     <ul className={styles.list}>
-      {recipes.map((recipe, index) => (
+      {recipes.map((recipe) => (
         /*
           React uses `key` to decide whether a list item in the new render is the
           “same” one as before. Here the key is the array index: 0, 1, 2, …
@@ -19,7 +19,7 @@ export default function RecipeList({ recipes }) {
           Try it: pin a card, then reverse order and watch whether “pinned” still
           matches the recipe you originally pinned.
         */
-        <li key={index} className={styles.item}>
+        <li key={recipe.id} className={styles.item}>
           <RecipeCard recipe={recipe} />
         </li>
       ))}
